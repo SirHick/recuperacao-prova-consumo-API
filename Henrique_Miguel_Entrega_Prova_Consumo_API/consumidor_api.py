@@ -2,11 +2,11 @@
 import requests 
 
 def obter_dados_meteorologicos(): #Função que executa a consulta
-    endereco = "http://api.open-meteo.com/v1/forecast"
+    endereco = "http://127.0.0.1:8000/v1/forecast"
 
     parametros = { #Parâmetros obrigatórios para a requisição 
-        "latitude": -26.48,
-        "longitude": -49.07,
+        "latitude": -26.4851,
+        "longitude": -49.0713,
         "current": [
             "temperature_2m",
             "relative_humidity_2m",
